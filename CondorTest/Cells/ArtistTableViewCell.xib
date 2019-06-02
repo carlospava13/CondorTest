@@ -32,14 +32,42 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3s-p2-0Ps">
+                        <rect key="frame" x="84" y="34" width="228" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fFP-7e-boa">
+                        <rect key="frame" x="84" y="73.5" width="228" height="2"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="for-xo-grG">
+                        <rect key="frame" x="84" y="58" width="228" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="WhI-Ik-O02"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="uZr-6e-zuk" secondAttribute="bottom" constant="14" id="0OU-8b-ERX"/>
+                    <constraint firstItem="x3s-p2-0Ps" firstAttribute="trailing" secondItem="ATd-xo-I0n" secondAttribute="trailing" id="0jK-1Y-4TU"/>
+                    <constraint firstItem="for-xo-grG" firstAttribute="bottom" secondItem="fFP-7e-boa" secondAttribute="bottom" constant="-4.5" id="0uQ-j9-POX"/>
                     <constraint firstItem="uZr-6e-zuk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="7xC-Wn-HMB"/>
+                    <constraint firstItem="fFP-7e-boa" firstAttribute="bottom" secondItem="uZr-6e-zuk" secondAttribute="bottom" id="AJc-4L-CWu"/>
+                    <constraint firstItem="for-xo-grG" firstAttribute="trailing" secondItem="x3s-p2-0Ps" secondAttribute="trailing" id="EDR-Cf-UcU"/>
+                    <constraint firstItem="for-xo-grG" firstAttribute="top" secondItem="x3s-p2-0Ps" secondAttribute="bottom" constant="3" id="Ne3-Zi-z8x"/>
                     <constraint firstItem="ATd-xo-I0n" firstAttribute="leading" secondItem="uZr-6e-zuk" secondAttribute="trailing" constant="8" id="Skz-5b-Tz4"/>
                     <constraint firstItem="uZr-6e-zuk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="XSp-ad-2KE"/>
+                    <constraint firstItem="x3s-p2-0Ps" firstAttribute="top" secondItem="ATd-xo-I0n" secondAttribute="bottom" constant="-1" id="ac9-Y6-jV2"/>
                     <constraint firstAttribute="trailing" secondItem="ATd-xo-I0n" secondAttribute="trailing" constant="8" id="bT1-RD-sWG"/>
+                    <constraint firstItem="fFP-7e-boa" firstAttribute="leading" secondItem="x3s-p2-0Ps" secondAttribute="leading" id="bo2-gg-IuN"/>
+                    <constraint firstItem="for-xo-grG" firstAttribute="leading" secondItem="x3s-p2-0Ps" secondAttribute="leading" id="k4a-zA-hYY"/>
                     <constraint firstItem="uZr-6e-zuk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="m0S-7m-uiy"/>
+                    <constraint firstItem="x3s-p2-0Ps" firstAttribute="leading" secondItem="ATd-xo-I0n" secondAttribute="leading" id="q0j-1g-woa"/>
+                    <constraint firstItem="fFP-7e-boa" firstAttribute="trailing" secondItem="x3s-p2-0Ps" secondAttribute="trailing" id="s42-cO-Fdz"/>
                     <constraint firstItem="ATd-xo-I0n" firstAttribute="top" secondItem="uZr-6e-zuk" secondAttribute="top" id="z8i-c1-FbO"/>
                 </constraints>
             </tableViewCellContentView>
@@ -47,8 +75,11 @@
             <connections>
                 <outlet property="artistImageView" destination="uZr-6e-zuk" id="eDB-xi-9P3"/>
                 <outlet property="artistNameLab" destination="ATd-xo-I0n" id="fDA-Mb-JZ7"/>
+                <outlet property="followerLab" destination="x3s-p2-0Ps" id="Eox-cS-lp6"/>
+                <outlet property="popularityLab" destination="for-xo-grG" id="IvS-kh-s42"/>
+                <outlet property="popularityProgressView" destination="fFP-7e-boa" id="AMJ-y5-R0v"/>
             </connections>
-            <point key="canvasLocation" x="47.826086956521742" y="106.80803571428571"/>
+            <point key="canvasLocation" x="47.826086956521742" y="106.47321428571428"/>
         </tableViewCell>
     </objects>
 </document>

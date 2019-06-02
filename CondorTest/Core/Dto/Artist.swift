@@ -12,4 +12,5 @@ struct Artist: Decodable {
     var popularity: Int
     var name:String
     var images:[ImageArtist]
+    var followers:Follower
 }

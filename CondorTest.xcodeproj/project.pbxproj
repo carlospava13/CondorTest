@@ -23,6 +23,7 @@
 		1A0D8AD322A46FC4004517B9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8AD222A46FC4004517B9 /* BaseViewController.swift */; };
 		1A0D8AD522A475FA004517B9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8AD422A475FA004517B9 /* Item.swift */; };
 		1A0D8AD722A47BFA004517B9 /* ImageArtist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8AD622A47BFA004517B9 /* ImageArtist.swift */; };
+		1A0D8AD922A4800D004517B9 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8AD822A4800D004517B9 /* Follower.swift */; };
 		1A4FF25422A4071D0031A9C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FF25322A4071D0031A9C6 /* AppDelegate.swift */; };
 		1A4FF25622A4071D0031A9C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FF25522A4071D0031A9C6 /* ViewController.swift */; };
 		1A4FF25922A4071D0031A9C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4FF25722A4071D0031A9C6 /* Main.storyboard */; };
@@ -71,6 +72,7 @@
 		1A0D8AD222A46FC4004517B9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1A0D8AD422A475FA004517B9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1A0D8AD622A47BFA004517B9 /* ImageArtist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageArtist.swift; sourceTree = "<group>"; };
+		1A0D8AD822A4800D004517B9 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		1A2B7F0A0AAEB2497D60FFA5 /* Pods-CondorTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondorTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CondorTest/Pods-CondorTest.release.xcconfig"; sourceTree = "<group>"; };
 		1A4FF25022A4071D0031A9C6 /* CondorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CondorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4FF25322A4071D0031A9C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				1A0D8ACD22A45AEF004517B9 /* Artist.swift */,
 				1A0D8AD422A475FA004517B9 /* Item.swift */,
 				1A0D8AD622A47BFA004517B9 /* ImageArtist.swift */,
+				1A0D8AD822A4800D004517B9 /* Follower.swift */,
 			);
 			path = Dto;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				1A4FF25622A4071D0031A9C6 /* ViewController.swift in Sources */,
 				1A7ED67022A44AD5003940F4 /* BaseTableViewCell.swift in Sources */,
 				1A0D8AD522A475FA004517B9 /* Item.swift in Sources */,
+				1A0D8AD922A4800D004517B9 /* Follower.swift in Sources */,
 				1A0D8AB422A44F13004517B9 /* ArtistTableViewCell.swift in Sources */,
 				1A0D8AC922A45562004517B9 /* ArtistPresenter.swift in Sources */,
 				1A0D8ABC22A4519D004517B9 /* ArtistRepository.swift in Sources */,

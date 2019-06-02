@@ -11,7 +11,10 @@ import SDWebImage
 class ArtistTableViewCell: BaseTableViewCell {
     @IBOutlet weak var artistImageView: UIImageView!
     @IBOutlet weak var artistNameLab: UILabel!
-
+    @IBOutlet weak var followerLab: UILabel!
+    @IBOutlet weak var popularityLab: UILabel!
+    @IBOutlet weak var popularityProgressView: UIProgressView!
+    
     override func setData(data: Any) {
         super.setData(data: data)
         guard let artist = data as? Artist else {
@@ -23,5 +26,8 @@ class ArtistTableViewCell: BaseTableViewCell {
         }
 
         self.artistNameLab.text = artist.name
+        self.followerLab.text = "Follower \(artist.followers.total)"
+        self.popularityLab.text = "Popularity \(artist.popularity)"
+        self.popularityProgressView.progress = Float(artist.popularity / 100)
     }
 }

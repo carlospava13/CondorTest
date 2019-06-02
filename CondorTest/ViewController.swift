@@ -41,6 +41,7 @@ class ViewController: BaseViewController {
     func setupTableView() {
         tableView.tableHeaderView = searchController.searchBar
         tableView.registerNib(ArtistTableViewCell.self)
+        tableView.rowHeight = UITableView.automaticDimension
     }
 
     func update() {
