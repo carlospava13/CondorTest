@@ -55,7 +55,11 @@ extension ViewController: UISearchResultsUpdating{
         guard let text = searchController.searchBar.text else {
             return
         }
-        presenter.fetchArtist(name: text)
+
+        if !text.isEmpty {
+            presenter.fetchArtist(name: text)
+        }
+
     }
 }
 
