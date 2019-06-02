@@ -10,15 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    lazy var  searchController:UISearchController = {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+
+        return searchController
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        #if MOCK
-        print("MOCK")
-        #else
-        print("Debug")
-        #endif
+        definesPresentationContext = true
+        self.setupTableView()
+
     }
 
+    func setupTableView() {
+        tableView.tableHeaderView = searchController.searchBar
+    }
 
+    func getArtist() {
+
+    }
 }
 
+extension ViewController: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController) {
+
+    }
+}

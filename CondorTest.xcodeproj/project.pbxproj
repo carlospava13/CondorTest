@@ -14,6 +14,8 @@
 		1A4FF25E22A4071E0031A9C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4FF25C22A4071E0031A9C6 /* LaunchScreen.storyboard */; };
 		1A4FF26922A4071E0031A9C6 /* CondorTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FF26822A4071E0031A9C6 /* CondorTestTests.swift */; };
 		1A4FF27422A4071E0031A9C6 /* CondorTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FF27322A4071E0031A9C6 /* CondorTestUITests.swift */; };
+		1A7ED66E22A44AB2003940F4 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7ED66D22A44AB2003940F4 /* Source.swift */; };
+		1A7ED67022A44AD5003940F4 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7ED66F22A44AD5003940F4 /* BaseTableViewCell.swift */; };
 		1AE841EC22A409E7002097C3 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE841EB22A409E7002097C3 /* BaseRepository.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		1A4FF26F22A4071E0031A9C6 /* CondorTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CondorTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4FF27322A4071E0031A9C6 /* CondorTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CondorTestUITests.swift; sourceTree = "<group>"; };
 		1A4FF27522A4071E0031A9C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A7ED66D22A44AB2003940F4 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		1A7ED66F22A44AD5003940F4 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		1AE841EB22A409E7002097C3 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +103,8 @@
 		1A4FF25222A4071D0031A9C6 /* CondorTest */ = {
 			isa = PBXGroup;
 			children = (
+				1A7ED66C22A4494D003940F4 /* Cells */,
+				1A7ED66B22A4493C003940F4 /* Source */,
 				1AE841E922A409C0002097C3 /* Core */,
 				1A4FF25322A4071D0031A9C6 /* AppDelegate.swift */,
 				1A4FF25522A4071D0031A9C6 /* ViewController.swift */,
@@ -126,6 +132,22 @@
 				1A4FF27522A4071E0031A9C6 /* Info.plist */,
 			);
 			path = CondorTestUITests;
+			sourceTree = "<group>";
+		};
+		1A7ED66B22A4493C003940F4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1A7ED66D22A44AB2003940F4 /* Source.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1A7ED66C22A4494D003940F4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1A7ED66F22A44AD5003940F4 /* BaseTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		1AE841E922A409C0002097C3 /* Core */ = {
@@ -275,8 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7ED66E22A44AB2003940F4 /* Source.swift in Sources */,
 				1AE841EC22A409E7002097C3 /* BaseRepository.swift in Sources */,
 				1A4FF25622A4071D0031A9C6 /* ViewController.swift in Sources */,
+				1A7ED67022A44AD5003940F4 /* BaseTableViewCell.swift in Sources */,
 				1A4FF25422A4071D0031A9C6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
