@@ -1,0 +1,545 @@
+{
+    "artists": {
+        "href": "https://api.spotify.com/v1/search?query=fergie&type=artist&market=CO&offset=0&limit=20",
+        "items": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3r17AfJCCUqC9Lf0OAc73G"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 3061910
+                },
+                "genres": [
+                    "dance pop",
+                    "hip pop",
+                    "pop",
+                    "pop rap",
+                    "post-teen pop",
+                    "r&b",
+                    "urban contemporary"
+                ],
+                "href": "https://api.spotify.com/v1/artists/3r17AfJCCUqC9Lf0OAc73G",
+                "id": "3r17AfJCCUqC9Lf0OAc73G",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/8f3351450c30b08da0fcfc9a7c317570b6bb291d",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/ca659033a3fa16d89414cc895b155b2f5883f018",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/63b54537b124e1f4f99f6b8b12202615eabef01f",
+                        "width": 160
+                    }
+                ],
+                "name": "Fergie",
+                "popularity": 74,
+                "type": "artist",
+                "uri": "spotify:artist:3r17AfJCCUqC9Lf0OAc73G"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1si6WHnb1ywwJ2lpFRUHcc"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 973
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/1si6WHnb1ywwJ2lpFRUHcc",
+                "id": "1si6WHnb1ywwJ2lpFRUHcc",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/5bd71c44e5f064b783742460ad88a07ac6aa3005",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/5c837b7b59c5af85107cb75e414aac90d99579ff",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/e298e02d812b91794ce8ea6e66b378ee17f8482d",
+                        "width": 64
+                    }
+                ],
+                "name": "Fergie",
+                "popularity": 39,
+                "type": "artist",
+                "uri": "spotify:artist:1si6WHnb1ywwJ2lpFRUHcc"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6sNy4OzAubtJwbzXwIo0my"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 10
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/6sNy4OzAubtJwbzXwIo0my",
+                "id": "6sNy4OzAubtJwbzXwIo0my",
+                "images": [],
+                "name": "Fergie",
+                "popularity": 3,
+                "type": "artist",
+                "uri": "spotify:artist:6sNy4OzAubtJwbzXwIo0my"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/05impfXVWCucX4WhY53b2h"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 1620
+                },
+                "genres": [
+                    "melodic hard rock"
+                ],
+                "href": "https://api.spotify.com/v1/artists/05impfXVWCucX4WhY53b2h",
+                "id": "05impfXVWCucX4WhY53b2h",
+                "images": [
+                    {
+                        "height": 1025,
+                        "url": "https://i.scdn.co/image/e288e98ff8cc5210ab34182c1e18fdbd14d9c352",
+                        "width": 1000
+                    },
+                    {
+                        "height": 656,
+                        "url": "https://i.scdn.co/image/c9b72a72c168af14124c8ab2766087b2ac62435b",
+                        "width": 640
+                    },
+                    {
+                        "height": 205,
+                        "url": "https://i.scdn.co/image/69924953c6c092e62db1c41486ed985629308780",
+                        "width": 200
+                    },
+                    {
+                        "height": 66,
+                        "url": "https://i.scdn.co/image/0a0f35bc51ad9805e336dd523a6d4c311568ed3b",
+                        "width": 64
+                    }
+                ],
+                "name": "Fergie Frederiksen",
+                "popularity": 14,
+                "type": "artist",
+                "uri": "spotify:artist:05impfXVWCucX4WhY53b2h"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4BD5rpD8XfmNkW1xt8PJgx"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 0
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/4BD5rpD8XfmNkW1xt8PJgx",
+                "id": "4BD5rpD8XfmNkW1xt8PJgx",
+                "images": [],
+                "name": "Fergie",
+                "popularity": 0,
+                "type": "artist",
+                "uri": "spotify:artist:4BD5rpD8XfmNkW1xt8PJgx"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/0JrvV62FrmcD9dGDdjkl6i"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 4
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/0JrvV62FrmcD9dGDdjkl6i",
+                "id": "0JrvV62FrmcD9dGDdjkl6i",
+                "images": [],
+                "name": "Brass Fergie",
+                "popularity": 0,
+                "type": "artist",
+                "uri": "spotify:artist:0JrvV62FrmcD9dGDdjkl6i"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/0c5PCdK9aL0bEXBFZzOhg2"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 0
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/0c5PCdK9aL0bEXBFZzOhg2",
+                "id": "0c5PCdK9aL0bEXBFZzOhg2",
+                "images": [],
+                "name": "Fergie Fredrickson",
+                "popularity": 0,
+                "type": "artist",
+                "uri": "spotify:artist:0c5PCdK9aL0bEXBFZzOhg2"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1oqpnI0NVDM7XMuscaar3i"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 28
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/1oqpnI0NVDM7XMuscaar3i",
+                "id": "1oqpnI0NVDM7XMuscaar3i",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/897d4b6ae48e09a561dd4968c1efcd6a95cf3663",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/bf097925cfa9f82dda87be28c3f6d74ceb900f2c",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/d9d524f492560d19504190dd6a223eaf77b37210",
+                        "width": 64
+                    }
+                ],
+                "name": "Fergie Mcelligott",
+                "popularity": 0,
+                "type": "artist",
+                "uri": "spotify:artist:1oqpnI0NVDM7XMuscaar3i"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2Ng7YjShPWp7ab10MWLUk9"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 18
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/2Ng7YjShPWp7ab10MWLUk9",
+                "id": "2Ng7YjShPWp7ab10MWLUk9",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/544e7342eb2fd6ef84ad57887284d5c5e4e4cf1b",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/55e37a25d91546ecabc0bb36b57e8e3d9340a95b",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/580b9750419307a40cbd0053f626c66e5b6a0a87",
+                        "width": 64
+                    }
+                ],
+                "name": "Fergie Milton",
+                "popularity": 0,
+                "type": "artist",
+                "uri": "spotify:artist:2Ng7YjShPWp7ab10MWLUk9"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2ylNpgZjYXZMpPkZD5QKKO"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 73
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/2ylNpgZjYXZMpPkZD5QKKO",
+                "id": "2ylNpgZjYXZMpPkZD5QKKO",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/cb14d05cf35e859c08e76d89198b6365b4e2155d",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/24a074774856ba8b75b0b702759f7a9d01e33408",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/7551af104dc5a314361d9869833cb1771b474a17",
+                        "width": 64
+                    }
+                ],
+                "name": "Kimberly Fergie",
+                "popularity": 0,
+                "type": "artist",
+                "uri": "spotify:artist:2ylNpgZjYXZMpPkZD5QKKO"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3fFb0an6W6LEQQ3YVicq23"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 474
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/3fFb0an6W6LEQQ3YVicq23",
+                "id": "3fFb0an6W6LEQQ3YVicq23",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/dc077ccb9fc0f1d6619e322440faf7fe12375ed0",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/2fdbca93910ad6ff928f91ece1f779b4b1fbaa18",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/184ff6415d29b8203a8c74d8bf7ded25768adb23",
+                        "width": 64
+                    }
+                ],
+                "name": "Fergie dj",
+                "popularity": 14,
+                "type": "artist",
+                "uri": "spotify:artist:3fFb0an6W6LEQQ3YVicq23"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4KY6i6dErVM3wNthTpFo6u"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 1
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/4KY6i6dErVM3wNthTpFo6u",
+                "id": "4KY6i6dErVM3wNthTpFo6u",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/53e7312c378d830cab05379bb610e79be9cde499",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/1c63a13b09f8ba64677fc92b6adbc49c8609151d",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/c364117d37228f28db72278de37bd92ae78cc3ce",
+                        "width": 64
+                    }
+                ],
+                "name": "Lee Fergie",
+                "popularity": 0,
+                "type": "artist",
+                "uri": "spotify:artist:4KY6i6dErVM3wNthTpFo6u"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4wFiOK5gZqg6tk4wvVansa"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 43
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/4wFiOK5gZqg6tk4wvVansa",
+                "id": "4wFiOK5gZqg6tk4wvVansa",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/21867199da8efa25797ef131ef124e9be9679963",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/d3a31283d7d120a18c1b5c909dde48679493a7a4",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/44d1d58c2e13320fb835cf1ea46e00bb65d01f19",
+                        "width": 64
+                    }
+                ],
+                "name": "Fergie Baby",
+                "popularity": 5,
+                "type": "artist",
+                "uri": "spotify:artist:4wFiOK5gZqg6tk4wvVansa"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5HNkrudjuhoHWsC0E02YNY"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 0
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/5HNkrudjuhoHWsC0E02YNY",
+                "id": "5HNkrudjuhoHWsC0E02YNY",
+                "images": [],
+                "name": "Fergie Matute",
+                "popularity": 0,
+                "type": "artist",
+                "uri": "spotify:artist:5HNkrudjuhoHWsC0E02YNY"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5QcpyoNFmJEUTvmGPj5p7w"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 0
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/5QcpyoNFmJEUTvmGPj5p7w",
+                "id": "5QcpyoNFmJEUTvmGPj5p7w",
+                "images": [],
+                "name": "Laura Fergie",
+                "popularity": 0,
+                "type": "artist",
+                "uri": "spotify:artist:5QcpyoNFmJEUTvmGPj5p7w"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5WAEVbrh93tNCK1XHkEr4Y"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 21
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/5WAEVbrh93tNCK1XHkEr4Y",
+                "id": "5WAEVbrh93tNCK1XHkEr4Y",
+                "images": [],
+                "name": "Hollywood Fergie",
+                "popularity": 15,
+                "type": "artist",
+                "uri": "spotify:artist:5WAEVbrh93tNCK1XHkEr4Y"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6fhnLkf3l8FIVg8j3Gd64I"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 387
+                },
+                "genres": [
+                    "traditional scottish folk"
+                ],
+                "href": "https://api.spotify.com/v1/artists/6fhnLkf3l8FIVg8j3Gd64I",
+                "id": "6fhnLkf3l8FIVg8j3Gd64I",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/9c0d95d6fe6104f6fedd83c1d812736ce8c1d171",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/7c176d904ebd83062028afb24e7118bdc9e603cf",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ed8123f10a1fa72da2ceb31c8daad5b99ea58f77",
+                        "width": 64
+                    }
+                ],
+                "name": "Fergie MacDonald",
+                "popularity": 13,
+                "type": "artist",
+                "uri": "spotify:artist:6fhnLkf3l8FIVg8j3Gd64I"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/72vPVT9PZ2GVW6XnlZA5ua"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 2
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/72vPVT9PZ2GVW6XnlZA5ua",
+                "id": "72vPVT9PZ2GVW6XnlZA5ua",
+                "images": [],
+                "name": "Fergie Farkom",
+                "popularity": 2,
+                "type": "artist",
+                "uri": "spotify:artist:72vPVT9PZ2GVW6XnlZA5ua"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7DkJilNWV8cEUInEp4gImY"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 2
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/7DkJilNWV8cEUInEp4gImY",
+                "id": "7DkJilNWV8cEUInEp4gImY",
+                "images": [],
+                "name": "Fergie Baby",
+                "popularity": 0,
+                "type": "artist",
+                "uri": "spotify:artist:7DkJilNWV8cEUInEp4gImY"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1nKqcnN4m2Kd8DzhFZ7oDd"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 3
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/1nKqcnN4m2Kd8DzhFZ7oDd",
+                "id": "1nKqcnN4m2Kd8DzhFZ7oDd",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/c2ef82f0a8dd01f8d8d10d90028ce0767bb29724",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/5501cd882c72aa231fb63744ebdc5d2c7df9a537",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/cbe155342815723067fd1b92220ef57b6bd77af0",
+                        "width": 64
+                    }
+                ],
+                "name": "Fergie & The Steelheads",
+                "popularity": 3,
+                "type": "artist",
+                "uri": "spotify:artist:1nKqcnN4m2Kd8DzhFZ7oDd"
+            }
+        ],
+        "limit": 20,
+        "next": "https://api.spotify.com/v1/search?query=fergie&type=artist&market=CO&offset=20&limit=20",
+        "offset": 0,
+        "previous": null,
+        "total": 27
+    }
+}

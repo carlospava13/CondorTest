@@ -19,8 +19,8 @@ class ArtistPresenter: NSObject {
     var delegate:ArtistPresenterProtocol?
 
     func fetchArtist(name:String) {
-        manager.fetchArtist(name: name, succes: { (artist) in
-            self.delegate?.getArtist(artists: artist)
+        manager.fetchArtist(name: name, succes: {[weak self] (artist) in
+            self?.delegate?.getArtist(artists: artist)
         }) { (error) in
             self.delegate?.failure(error: error)
         }

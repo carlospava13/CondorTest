@@ -10,6 +10,6 @@ import Foundation
 
 class BaseRepository: NSObject {
     
-    var api:Api = Api()
+    lazy var endPoint:EndPoint = EndPoint()
 
 }

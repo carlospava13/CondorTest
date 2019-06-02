@@ -13,7 +13,7 @@
 		1A0D8AB822A44F77004517B9 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8AB722A44F77004517B9 /* NSObject+ClassName.swift */; };
 		1A0D8ABA22A4507D004517B9 /* TableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8AB922A4507D004517B9 /* TableView+Register.swift */; };
 		1A0D8ABC22A4519D004517B9 /* ArtistRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8ABB22A4519D004517B9 /* ArtistRepository.swift */; };
-		1A0D8ABE22A4521F004517B9 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8ABD22A4521F004517B9 /* Api.swift */; };
+		1A0D8ABE22A4521F004517B9 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8ABD22A4521F004517B9 /* EndPoint.swift */; };
 		1A0D8AC122A45373004517B9 /* ArtistRepositoryPortocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8AC022A45373004517B9 /* ArtistRepositoryPortocol.swift */; };
 		1A0D8AC422A45425004517B9 /* ArtistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8AC322A45425004517B9 /* ArtistManager.swift */; };
 		1A0D8AC622A45465004517B9 /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8AC522A45465004517B9 /* BaseManager.swift */; };
@@ -24,6 +24,11 @@
 		1A0D8AD522A475FA004517B9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8AD422A475FA004517B9 /* Item.swift */; };
 		1A0D8AD722A47BFA004517B9 /* ImageArtist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8AD622A47BFA004517B9 /* ImageArtist.swift */; };
 		1A0D8AD922A4800D004517B9 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8AD822A4800D004517B9 /* Follower.swift */; };
+		1A0D8ADB22A484D5004517B9 /* ArtistRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8ADA22A484D5004517B9 /* ArtistRepositoryMock.swift */; };
+		1A0D8ADE22A48928004517B9 /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D8ADD22A48928004517B9 /* mock.json */; };
+		1A0D8AE522A48D19004517B9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D8AE722A48D19004517B9 /* Localizable.strings */; };
+		1A0D8AEA22A48D73004517B9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8AE922A48D73004517B9 /* Constants.swift */; };
+		1A0D8AED22A49662004517B9 /* NSError+EventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8AEC22A49662004517B9 /* NSError+EventHandler.swift */; };
 		1A4FF25422A4071D0031A9C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FF25322A4071D0031A9C6 /* AppDelegate.swift */; };
 		1A4FF25622A4071D0031A9C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FF25522A4071D0031A9C6 /* ViewController.swift */; };
 		1A4FF25922A4071D0031A9C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4FF25722A4071D0031A9C6 /* Main.storyboard */; };
@@ -62,7 +67,7 @@
 		1A0D8AB722A44F77004517B9 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		1A0D8AB922A4507D004517B9 /* TableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Register.swift"; sourceTree = "<group>"; };
 		1A0D8ABB22A4519D004517B9 /* ArtistRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistRepository.swift; sourceTree = "<group>"; };
-		1A0D8ABD22A4521F004517B9 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		1A0D8ABD22A4521F004517B9 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		1A0D8AC022A45373004517B9 /* ArtistRepositoryPortocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistRepositoryPortocol.swift; sourceTree = "<group>"; };
 		1A0D8AC322A45425004517B9 /* ArtistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistManager.swift; sourceTree = "<group>"; };
 		1A0D8AC522A45465004517B9 /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
@@ -73,6 +78,14 @@
 		1A0D8AD422A475FA004517B9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1A0D8AD622A47BFA004517B9 /* ImageArtist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageArtist.swift; sourceTree = "<group>"; };
 		1A0D8AD822A4800D004517B9 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		1A0D8ADA22A484D5004517B9 /* ArtistRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistRepositoryMock.swift; sourceTree = "<group>"; };
+		1A0D8ADD22A48928004517B9 /* mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
+		1A0D8ADF22A48C74004517B9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		1A0D8AE022A48C74004517B9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		1A0D8AE622A48D19004517B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1A0D8AE822A48D1B004517B9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1A0D8AE922A48D73004517B9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1A0D8AEC22A49662004517B9 /* NSError+EventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+EventHandler.swift"; sourceTree = "<group>"; };
 		1A2B7F0A0AAEB2497D60FFA5 /* Pods-CondorTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondorTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CondorTest/Pods-CondorTest.release.xcconfig"; sourceTree = "<group>"; };
 		1A4FF25022A4071D0031A9C6 /* CondorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CondorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4FF25322A4071D0031A9C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +158,7 @@
 			children = (
 				1A0D8AB722A44F77004517B9 /* NSObject+ClassName.swift */,
 				1A0D8AB922A4507D004517B9 /* TableView+Register.swift */,
+				1A0D8AE922A48D73004517B9 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -194,6 +208,22 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		1A0D8ADC22A487B3004517B9 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				1A0D8ABD22A4521F004517B9 /* EndPoint.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		1A0D8AEB22A4962C004517B9 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				1A0D8AEC22A49662004517B9 /* NSError+EventHandler.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		1A4FF24722A4071D0031A9C6 = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +261,8 @@
 				1A4FF25A22A4071E0031A9C6 /* Assets.xcassets */,
 				1A4FF25C22A4071E0031A9C6 /* LaunchScreen.storyboard */,
 				1A4FF25F22A4071E0031A9C6 /* Info.plist */,
+				1A0D8ADD22A48928004517B9 /* mock.json */,
+				1A0D8AE722A48D19004517B9 /* Localizable.strings */,
 			);
 			path = CondorTest;
 			sourceTree = "<group>";
@@ -274,11 +306,12 @@
 		1AE841E922A409C0002097C3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1A0D8AEB22A4962C004517B9 /* Error */,
+				1A0D8ADC22A487B3004517B9 /* Api */,
 				1A0D8ACA22A45940004517B9 /* Dto */,
 				1A0D8AC222A45417004517B9 /* Managers */,
 				1A0D8ABF22A45348004517B9 /* ReposiotryProtocol */,
 				1AE841EA22A409C6002097C3 /* Repository */,
-				1A0D8ABD22A4521F004517B9 /* Api.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -288,6 +321,7 @@
 			children = (
 				1AE841EB22A409E7002097C3 /* BaseRepository.swift */,
 				1A0D8ABB22A4519D004517B9 /* ArtistRepository.swift */,
+				1A0D8ADA22A484D5004517B9 /* ArtistRepositoryMock.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -398,6 +432,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 1A4FF24722A4071D0031A9C6;
 			productRefGroup = 1A4FF25122A4071D0031A9C6 /* Products */;
@@ -417,9 +452,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A4FF25E22A4071E0031A9C6 /* LaunchScreen.storyboard in Resources */,
+				1A0D8AE522A48D19004517B9 /* Localizable.strings in Resources */,
 				1A4FF25B22A4071E0031A9C6 /* Assets.xcassets in Resources */,
 				1A0D8AB522A44F13004517B9 /* ArtistTableViewCell.xib in Resources */,
 				1A4FF25922A4071D0031A9C6 /* Main.storyboard in Resources */,
+				1A0D8ADE22A48928004517B9 /* mock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,10 +577,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A0D8AB822A44F77004517B9 /* NSObject+ClassName.swift in Sources */,
+				1A0D8AEA22A48D73004517B9 /* Constants.swift in Sources */,
 				1A0D8AC122A45373004517B9 /* ArtistRepositoryPortocol.swift in Sources */,
 				1A7ED66E22A44AB2003940F4 /* Source.swift in Sources */,
 				1A0D8ACC22A45AA5004517B9 /* ResponseArtist.swift in Sources */,
 				1AE841EC22A409E7002097C3 /* BaseRepository.swift in Sources */,
+				1A0D8ADB22A484D5004517B9 /* ArtistRepositoryMock.swift in Sources */,
 				1A0D8AC622A45465004517B9 /* BaseManager.swift in Sources */,
 				1A0D8AC422A45425004517B9 /* ArtistManager.swift in Sources */,
 				1A0D8AD322A46FC4004517B9 /* BaseViewController.swift in Sources */,
@@ -551,12 +590,13 @@
 				1A7ED67022A44AD5003940F4 /* BaseTableViewCell.swift in Sources */,
 				1A0D8AD522A475FA004517B9 /* Item.swift in Sources */,
 				1A0D8AD922A4800D004517B9 /* Follower.swift in Sources */,
+				1A0D8AED22A49662004517B9 /* NSError+EventHandler.swift in Sources */,
 				1A0D8AB422A44F13004517B9 /* ArtistTableViewCell.swift in Sources */,
 				1A0D8AC922A45562004517B9 /* ArtistPresenter.swift in Sources */,
 				1A0D8ABC22A4519D004517B9 /* ArtistRepository.swift in Sources */,
 				1A0D8ABA22A4507D004517B9 /* TableView+Register.swift in Sources */,
 				1A0D8AD722A47BFA004517B9 /* ImageArtist.swift in Sources */,
-				1A0D8ABE22A4521F004517B9 /* Api.swift in Sources */,
+				1A0D8ABE22A4521F004517B9 /* EndPoint.swift in Sources */,
 				1A0D8ACE22A45AEF004517B9 /* Artist.swift in Sources */,
 				1A4FF25422A4071D0031A9C6 /* AppDelegate.swift in Sources */,
 			);
@@ -594,10 +634,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1A0D8AE722A48D19004517B9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A0D8AE622A48D19004517B9 /* en */,
+				1A0D8AE822A48D1B004517B9 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		1A4FF25722A4071D0031A9C6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1A4FF25822A4071D0031A9C6 /* Base */,
+				1A0D8ADF22A48C74004517B9 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -606,6 +656,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1A4FF25D22A4071E0031A9C6 /* Base */,
+				1A0D8AE022A48C74004517B9 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -617,6 +668,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -678,6 +730,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -851,6 +904,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -11,25 +11,24 @@ import Alamofire
 import AlamofireMapper
 class ArtistRepository: BaseRepository, ArtistRepositoryProtocol {
 
-    override init() {
-        super.init()
-    }
-
-
-
     func fetchArtist(name: String, succes:@escaping  SuccesCompletionBlock , failure:@escaping FailureCompletionBlock) {
         let params = ["q":name, "type":"artist"]
-        let token = api.token
-        let url = api.urlBase + api.searchEndPoint
+        let token = endPoint.token
+        let url = endPoint.urlBase + endPoint.searchEndPoint
 
         Alamofire.request(url, method: .get
-            , parameters: params, encoding: URLEncoding.default, headers:  ["Authorization":token]).responseObject { (response: DataResponse<ResponseArtist>) in
+            , parameters: params, encoding: URLEncoding.default, headers:  ["Authorization":token]).responseObject {[weak self]  (response: DataResponse<ResponseArtist>) in
                 switch response.result {
                 case let .success(data):
                     succes(data.artists.items)
-                case let .failure(error):
+                case let .failure(error as NSError):
+                    let statusCode = response.response?.statusCode
+                    error.eventHandlerError(statusCode: statusCode!)
                     failure(error)
                 }
         }
     }
 }
+
+
+

@@ -26,8 +26,8 @@ class ArtistTableViewCell: BaseTableViewCell {
         }
 
         self.artistNameLab.text = artist.name
-        self.followerLab.text = "Follower \(artist.followers.total)"
-        self.popularityLab.text = "Popularity \(artist.popularity)"
+        self.followerLab.text = "\(Constants.follower) \(artist.followers.total)"
+        self.popularityLab.text = "\(Constants.popularity) \(artist.popularity)"
         self.popularityProgressView.progress = Float(artist.popularity / 100)
     }
 }

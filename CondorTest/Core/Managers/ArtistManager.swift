@@ -21,7 +21,7 @@ class ArtistManager: BaseManager {
         if self.isDebug {
             self.respository = ArtistRepository()
         }else {
-
+            self.respository = ArtistRepositoryMock()
         }
     }
 
@@ -29,7 +29,7 @@ class ArtistManager: BaseManager {
         self.respository?.fetchArtist(name: name, succes: { [weak self] result in
             succes(result)
         }, failure: { (error) in
-            //failure(error)
+            failure(error)
         })
     }
 }
