@@ -8,11 +8,21 @@
 
 import Foundation
 
+protocol ArtistPresenterProtocol {
+    func getArtist(artists:[Artist])
+    func failure(error:Error)
+}
+
+
 class ArtistPresenter: NSObject {
     lazy var manager:ArtistManager = ArtistManager()
-
+    var delegate:ArtistPresenterProtocol?
 
     func fetchArtist(name:String) {
-        manager.fetchArtist(name: name)
+        manager.fetchArtist(name: name, succes: { (artist) in
+            self.delegate?.getArtist(artists: artist)
+        }) { (error) in
+            self.delegate?.failure(error: error)
+        }
     }
 }

@@ -8,6 +8,9 @@
 
 import Foundation
 
+typealias SuccesCompletionBlock = ([Artist]) -> Void
+typealias FailureCompletionBlock = (Error) -> Void
+
 protocol ArtistRepositoryProtocol {
-    func fetchArtist(name:String)
+    func fetchArtist(name: String, succes:@escaping SuccesCompletionBlock , failure:@escaping FailureCompletionBlock)
 }

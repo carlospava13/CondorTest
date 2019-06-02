@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,7 +19,12 @@ class ViewController: UIViewController {
 
         return searchController
     }()
-    lazy var presenter: ArtistPresenter = ArtistPresenter()
+
+    lazy var presenter: ArtistPresenter = {
+        let presenter = ArtistPresenter()
+        presenter.delegate = self
+        return presenter
+    }()
     var source:Source<ArtistTableViewCell>?
 
     override func viewDidLoad() {
@@ -49,5 +54,15 @@ extension ViewController: UISearchResultsUpdating{
             return
         }
         presenter.fetchArtist(name: text)
+    }
+}
+
+extension ViewController: ArtistPresenterProtocol{
+    func getArtist(artists: [Artist]) {
+        print(artists.count)
+    }
+
+    func failure(error: Error) {
+     self.showAlert(title: "Errpr", subTitle: error.localizedDescription)
     }
 }

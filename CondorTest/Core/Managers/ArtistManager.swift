@@ -25,7 +25,11 @@ class ArtistManager: BaseManager {
         }
     }
 
-    func fetchArtist(name:String) {
-        self.respository?.fetchArtist(name: name)
+    func fetchArtist(name: String, succes:@escaping SuccesCompletionBlock , failure:@escaping FailureCompletionBlock){
+        self.respository?.fetchArtist(name: name, succes: { [weak self] result in
+            succes(result)
+        }, failure: { (error) in
+            //failure(error)
+        })
     }
 }
