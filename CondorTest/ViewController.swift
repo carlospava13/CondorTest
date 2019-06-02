@@ -19,25 +19,35 @@ class ViewController: UIViewController {
 
         return searchController
     }()
+    lazy var presenter: ArtistPresenter = ArtistPresenter()
+    var source:Source<ArtistTableViewCell>?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         definesPresentationContext = true
         self.setupTableView()
+    }
 
+    func setDataSource() {
+        self.source = Source(identifier: ArtistTableViewCell.className)
     }
 
     func setupTableView() {
         tableView.tableHeaderView = searchController.searchBar
+        tableView.registerNib(ArtistTableViewCell.self)
     }
 
-    func getArtist() {
-
+    func update() {
+        self.tableView.dataSource = self.source
+        self.tableView.reloadData()
     }
 }
 
 extension ViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
-
+        guard let text = searchController.searchBar.text else {
+            return
+        }
+        presenter.fetchArtist(name: text)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  BaseRepository.swift
+//  ArtistRepositoryPortocol.swift
 //  CondorTest
 //
 //  Created by Carlos Pava on 6/2/19.
@@ -8,8 +8,6 @@
 
 import Foundation
 
-class BaseRepository: NSObject {
-    
-    var api:Api = Api()
-
+protocol ArtistRepositoryProtocol {
+    func fetchArtist(name:String)
 }
