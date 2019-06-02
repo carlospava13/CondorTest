@@ -31,6 +31,7 @@ class ViewController: BaseViewController {
         super.viewDidLoad()
         definesPresentationContext = true
         self.setupTableView()
+        self.setDataSource()
     }
 
     func setDataSource() {
@@ -59,7 +60,8 @@ extension ViewController: UISearchResultsUpdating{
 
 extension ViewController: ArtistPresenterProtocol{
     func getArtist(artists: [Artist]) {
-        print(artists.count)
+        self.source?.setData(data: artists)
+        self.update()
     }
 
     func failure(error: Error) {
