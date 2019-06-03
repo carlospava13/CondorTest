@@ -42,7 +42,7 @@
 		1A0D8B0722A4AB3C004517B9 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D8B0522A4AB3C004517B9 /* AlbumTableViewCell.swift */; };
 		1A0D8B0822A4AB3C004517B9 /* AlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D8B0622A4AB3C004517B9 /* AlbumTableViewCell.xib */; };
 		1A4FF25422A4071D0031A9C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FF25322A4071D0031A9C6 /* AppDelegate.swift */; };
-		1A4FF25622A4071D0031A9C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FF25522A4071D0031A9C6 /* ViewController.swift */; };
+		1A4FF25622A4071D0031A9C6 /* ArtistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FF25522A4071D0031A9C6 /* ArtistListViewController.swift */; };
 		1A4FF25922A4071D0031A9C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4FF25722A4071D0031A9C6 /* Main.storyboard */; };
 		1A4FF25B22A4071E0031A9C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4FF25A22A4071E0031A9C6 /* Assets.xcassets */; };
 		1A4FF25E22A4071E0031A9C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4FF25C22A4071E0031A9C6 /* LaunchScreen.storyboard */; };
@@ -113,7 +113,7 @@
 		1A2B7F0A0AAEB2497D60FFA5 /* Pods-CondorTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondorTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CondorTest/Pods-CondorTest.release.xcconfig"; sourceTree = "<group>"; };
 		1A4FF25022A4071D0031A9C6 /* CondorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CondorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4FF25322A4071D0031A9C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A4FF25522A4071D0031A9C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A4FF25522A4071D0031A9C6 /* ArtistListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistListViewController.swift; sourceTree = "<group>"; };
 		1A4FF25822A4071D0031A9C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A4FF25A22A4071E0031A9C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A4FF25D22A4071E0031A9C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -254,7 +254,7 @@
 		1A0D8AD122A46FA7004517B9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				1A4FF25522A4071D0031A9C6 /* ViewController.swift */,
+				1A4FF25522A4071D0031A9C6 /* ArtistListViewController.swift */,
 				1A0D8AD222A46FC4004517B9 /* BaseViewController.swift */,
 				1A0D8AEE22A49F07004517B9 /* AlbumViewController.swift */,
 			);
@@ -675,7 +675,7 @@
 				1A0D8B0022A4A81F004517B9 /* Album.swift in Sources */,
 				1A0D8AC422A45425004517B9 /* ArtistManager.swift in Sources */,
 				1A0D8AD322A46FC4004517B9 /* BaseViewController.swift in Sources */,
-				1A4FF25622A4071D0031A9C6 /* ViewController.swift in Sources */,
+				1A4FF25622A4071D0031A9C6 /* ArtistListViewController.swift in Sources */,
 				1A7ED67022A44AD5003940F4 /* BaseTableViewCell.swift in Sources */,
 				1A0D8AEF22A49F07004517B9 /* AlbumViewController.swift in Sources */,
 				1A0D8AD522A475FA004517B9 /* Item.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: BaseViewController {
+class ArtistListViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -54,11 +54,12 @@ class ViewController: BaseViewController {
 
     func update() {
         self.tableView.dataSource = self.source
+        self.tableView.delegate = self.source
         self.tableView.reloadData()
     }
 }
 
-extension ViewController: UISearchResultsUpdating{
+extension ArtistListViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
 
         guard let text = searchController.searchBar.text else {
@@ -71,7 +72,7 @@ extension ViewController: UISearchResultsUpdating{
     }
 }
 
-extension ViewController: ArtistPresenterProtocol{
+extension ArtistListViewController: ArtistPresenterProtocol{
     func getArtist(artists: [Artist]) {
         self.source?.setData(data: artists, delegate: self)
         self.update()
@@ -83,7 +84,7 @@ extension ViewController: ArtistPresenterProtocol{
     }
 }
 
-extension ViewController: ArtistCellProtocol {
+extension ArtistListViewController: ArtistCellProtocol {
     func didSelected(artist: Artist) {
        self.route?.showAlbumViewController(artist: artist)
     }

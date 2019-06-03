@@ -8,10 +8,7 @@
 
 import UIKit
 
-protocol SourceProtocol {
-    func didSelectItem()
-}
-class Source<Cell: BaseTableViewCell>: NSObject, UITableViewDataSource {
+class Source<Cell: BaseTableViewCell>: NSObject, UITableViewDataSource, UITableViewDelegate {
 
     var identifier:String?
     var delegate: BaseProtocol?
@@ -37,6 +34,10 @@ class Source<Cell: BaseTableViewCell>: NSObject, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier!, for: indexPath) as! Cell
         cell.setData(data: self.items![indexPath.row], delegate: self.delegate!)
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

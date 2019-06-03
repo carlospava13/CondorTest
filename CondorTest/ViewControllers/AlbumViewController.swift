@@ -47,6 +47,7 @@ class AlbumViewController: BaseViewController {
 
     func update() {
         self.tableView.dataSource = self.source
+        self.tableView.delegate = self.source
         self.tableView.reloadData()
     }
 }
