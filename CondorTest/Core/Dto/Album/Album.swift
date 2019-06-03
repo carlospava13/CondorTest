@@ -1,5 +1,5 @@
 //
-//  Artist.swift
+//  Album.swift
 //  CondorTest
 //
 //  Created by Carlos Pava on 6/2/19.
@@ -8,9 +8,7 @@
 
 import Foundation
 
-struct Artist: Decodable {
-    var popularity: Int
-    var name:String
+struct Album:Decodable {
     var images:[ImageArtist]
-    var followers:Follower
+    var name:String
 }

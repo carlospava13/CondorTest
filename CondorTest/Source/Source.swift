@@ -8,17 +8,21 @@
 
 import UIKit
 
+protocol SourceProtocol {
+    func didSelectItem()
+}
 class Source<Cell: BaseTableViewCell>: NSObject, UITableViewDataSource {
 
     var identifier:String?
-
+    var delegate: BaseProtocol?
     var items:[Any]?
     init(identifier:String) {
         self.identifier = identifier
     }
 
-    func setData(data:[Any]) {
+    func setData(data:[Any], delegate:BaseProtocol) {
         self.items = data
+        self.delegate = delegate
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -31,7 +35,7 @@ class Source<Cell: BaseTableViewCell>: NSObject, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier!, for: indexPath) as! Cell
-        cell.setData(data: self.items![indexPath.row])
+        cell.setData(data: self.items![indexPath.row], delegate: self.delegate!)
         return cell
     }
 }

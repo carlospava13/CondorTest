@@ -16,9 +16,11 @@ class BaseViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func showAlert(title:String,subTitle:String){
+    func showAlert(title:String,subTitle:String, completion:@escaping () -> Void){
         let alert = UIAlertController(title: title, message: subTitle, preferredStyle: .alert)
-        let done = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let done = UIAlertAction(title: "OK", style: .default,handler: { action in
+            completion()
+        })
         alert.addAction(done)
         self.present(alert, animated: true, completion: nil)
     }

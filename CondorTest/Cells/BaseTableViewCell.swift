@@ -9,6 +9,9 @@
 import UIKit
 
 class BaseTableViewCell: UITableViewCell, ReusableCell {
+
+    var artistDelegate: ArtistCellProtocol?
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -19,7 +22,10 @@ class BaseTableViewCell: UITableViewCell, ReusableCell {
         // Configure the view for the selected state
     }
 
-    func setData(data:Any) {
-        print(data)
+    func setData(data:Any, delegate: BaseProtocol) {
+        if let delegate = delegate as? ArtistCellProtocol{
+            self.artistDelegate = delegate
+        }
+
     }
 }

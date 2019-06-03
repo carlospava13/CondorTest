@@ -12,3 +12,4 @@
 //Errors
 "expiredToken" = "ha expirado el token";
 "serverError" = "error de conexion";
+"notFound" = "no encontrado";

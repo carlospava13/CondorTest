@@ -27,22 +27,29 @@ class ViewController: BaseViewController {
     }()
 
     var source:Source<ArtistTableViewCell>?
+    var route:ArtistRoute?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         definesPresentationContext = true
         self.setupTableView()
         self.setDataSource()
+        self.setRoutes()
     }
 
     func setDataSource() {
         self.source = Source(identifier: ArtistTableViewCell.className)
     }
 
+    func setRoutes() {
+        self.route = ArtistRoute(parentViewController: self)
+    }
+
     func setupTableView() {
         tableView.tableHeaderView = searchController.searchBar
         tableView.registerNib(ArtistTableViewCell.self)
         tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.separatorStyle = .none
     }
 
     func update() {
@@ -53,7 +60,7 @@ class ViewController: BaseViewController {
 
 extension ViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
-        
+
         guard let text = searchController.searchBar.text else {
             return
         }
@@ -66,11 +73,18 @@ extension ViewController: UISearchResultsUpdating{
 
 extension ViewController: ArtistPresenterProtocol{
     func getArtist(artists: [Artist]) {
-        self.source?.setData(data: artists)
+        self.source?.setData(data: artists, delegate: self)
         self.update()
     }
 
     func failure(error: NSError) {
-     self.showAlert(title: ConstantsError.error, subTitle: error.domain)
+        self.showAlert(title: ConstantsError.error, subTitle: error.domain) {
+        }
+    }
+}
+
+extension ViewController: ArtistCellProtocol {
+    func didSelected(artist: Artist) {
+       self.route?.showAlbumViewController(artist: artist)
     }
 }

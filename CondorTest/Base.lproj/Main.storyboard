@@ -41,6 +41,36 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="82.366071428571431"/>
         </scene>
+        <!--Album View Controller-->
+        <scene sceneID="dFn-3u-XaH">
+            <objects>
+                <viewController storyboardIdentifier="AlbumViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rmg-g9-3sk" customClass="AlbumViewController" customModule="CondorTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qr7-ZL-AFE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ith-3J-4ut">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ith-3J-4ut" firstAttribute="leading" secondItem="an0-kl-lmG" secondAttribute="leading" id="5KK-Df-n0c"/>
+                            <constraint firstItem="Ith-3J-4ut" firstAttribute="top" secondItem="an0-kl-lmG" secondAttribute="top" id="OQA-S3-OpC"/>
+                            <constraint firstItem="an0-kl-lmG" firstAttribute="trailing" secondItem="Ith-3J-4ut" secondAttribute="trailing" id="Rxc-cz-JVI"/>
+                            <constraint firstItem="an0-kl-lmG" firstAttribute="bottom" secondItem="Ith-3J-4ut" secondAttribute="bottom" id="hB9-dR-Ozi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="an0-kl-lmG"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Ith-3J-4ut" id="ONj-kI-Hj6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhi-AV-EFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1799" y="77"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fnv-Um-gq2">
             <objects>

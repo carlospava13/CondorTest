@@ -10,6 +10,16 @@ import Foundation
 
 class EndPoint {
     let urlBase = "https://api.spotify.com/v1/"
-    let token = "Bearer BQCC1FKE4j6xNGTB7p8tMUhrZPLOmOhu2_YMo_0uOB4HvdNUhv4ndvD1-NoQdu6GZ86NlgbhU5SemykFNKnQfhGpqjtNq49hC3JOmlyJ2MWGwlZrtGsafoG1jHgi4y227e7htLvUJZNuTw13nJIuUPE2CGPqaDcL6kn6XmgIgic60iJ-_2PqPU23dWIDbLosz_6876EO98dM3WdyjbYooTO9cWaKzo0t8gKfuf9YR7W0BvRld4TC60gvfUwo8FFm3En5SonbSaP3JYtKNa4g"
+    let token = "Bearer BQDz6Qn5JZvpE-1UvnxQ6swDdf0tK8n0N9mbk7NL1MKi-09lHInFA724N39vydVpEivC7eRJhqLKSFxxosfQONa9k4wdmjBdzSVBHg9MKmHZpsdCw1876no-jIVAxJpzgFzEFPqdxb9wvFOb77Oa_IkfcTLWYZmTrevI978YyF4Z-gYj6PFsMLo0UPdwXGRgi8YLfWgh1_J3K49Zol5dc_S4B5Aemix35Q7XnYaa5wsYbibp3AuGE0f3HqNUlYuTk9L1V4SRrLKtwlWD7DbT"
     let searchEndPoint = "search"
+
+
+    var albumEndPoint: String = "artists/%@/albums"
+    var album: String {
+        get { return self.albumEndPoint }
+        set {
+            self.albumEndPoint = String(format: albumEndPoint, newValue)
+        }
+    }
+
 }

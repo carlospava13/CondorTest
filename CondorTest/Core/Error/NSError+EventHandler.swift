@@ -21,6 +21,8 @@ extension NSError {
             descriptionError = ConstantsError.severError
         case .expiredTokenError:
             descriptionError = ConstantsError.severError
+        case .notFound:
+            descriptionError = ConstantsError.notFound
         }
         
         return NSError(domain: descriptionError, code: statusCode, userInfo: userInfo)
@@ -30,10 +32,13 @@ extension NSError {
 enum ErrorType :Int{
     case serverError = 500
     case expiredTokenError = 401
+    case notFound = 404
 }
 
 struct ConstantsError {
     static let error = "Error"
     static let expiredToken = NSLocalizedString("expiredToken", comment: "")
     static let severError = NSLocalizedString("serverError", comment: "")
+    static let notFound = NSLocalizedString("notFound", comment: "")
+    
 }
