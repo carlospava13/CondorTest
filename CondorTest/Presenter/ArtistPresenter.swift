@@ -9,7 +9,6 @@
 import Foundation
 
 protocol ArtistPresenterProtocol {
-    func getArtist(artists:[Artist])
     func failure(error:NSError)
 }
 
@@ -18,11 +17,12 @@ class ArtistPresenter: NSObject {
     lazy var manager:ArtistManager = ArtistManager()
     var delegate:ArtistPresenterProtocol?
 
-    func fetchArtist(name:String) {
-        manager.fetchArtist(name: name, succes: {[weak self] (artist) in
-            self?.delegate?.getArtist(artists: artist)
-        }) { (error) in
-            self.delegate?.failure(error: error)
+    func fetchArtist(name:String, with completion: @escaping (_ : [Artist]?) -> Void) {
+        manager.fetchArtist(name: name, succes: { artist in
+            completion(artist)
+        }) { [weak self] error in
+            completion(nil)
+            self?.delegate?.failure(error: error)
         }
     }
 }

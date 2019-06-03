@@ -9,9 +9,14 @@
 import UIKit
 
 class ArtistListViewController: BaseViewController {
-
+    // MARK: - IBOUtlets
     @IBOutlet weak var tableView: UITableView!
-    
+
+    // MARK: - Properties
+    var source:Source<ArtistTableViewCell>?
+    var route:ArtistRoute?
+    var isCurrentlyFetching: Bool = false
+
     lazy var  searchController:UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
@@ -26,9 +31,7 @@ class ArtistListViewController: BaseViewController {
         return presenter
     }()
 
-    var source:Source<ArtistTableViewCell>?
-    var route:ArtistRoute?
-
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         definesPresentationContext = true
@@ -37,55 +40,65 @@ class ArtistListViewController: BaseViewController {
         self.setRoutes()
     }
 
-    func setDataSource() {
+    // MARK: - Private Methods
+    fileprivate func setDataSource() {
         self.source = Source(identifier: ArtistTableViewCell.className)
     }
 
-    func setRoutes() {
+    fileprivate func setRoutes() {
         self.route = ArtistRoute(parentViewController: self)
     }
 
-    func setupTableView() {
+    fileprivate func setupTableView() {
         tableView.tableHeaderView = searchController.searchBar
         tableView.registerNib(ArtistTableViewCell.self)
         tableView.rowHeight = UITableView.automaticDimension
         self.tableView.separatorStyle = .none
     }
 
-    func update() {
+    fileprivate func update() {
         self.tableView.dataSource = self.source
-        self.tableView.delegate = self.source
         self.tableView.reloadData()
     }
-}
-
-extension ArtistListViewController: UISearchResultsUpdating{
-    func updateSearchResults(for searchController: UISearchController) {
-
-        guard let text = searchController.searchBar.text else {
-            return
-        }
-
-        if !text.isEmpty {
-            presenter.fetchArtist(name: text)
-        }
-    }
-}
-
-extension ArtistListViewController: ArtistPresenterProtocol{
-    func getArtist(artists: [Artist]) {
+    /**
+     This method populates the DataSource of a given valid Artist array.
+     - parameters artists: An array of artist.
+     */
+    internal func getArtist(artists: [Artist]) {
         self.source?.setData(data: artists, delegate: self)
         self.update()
     }
+}
 
+// MARK: - UISearchResultsUpdating
+extension ArtistListViewController: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text,
+            !text.isEmpty,
+            !isCurrentlyFetching else {
+                return
+        }
+        isCurrentlyFetching = true
+        presenter.fetchArtist(name: text) { [weak self] artist in
+            guard let artist = artist, !artist.isEmpty else {
+                self?.isCurrentlyFetching = false
+                return
+            }
+            self?.isCurrentlyFetching = false
+            self?.getArtist(artists: artist)
+        }
+    }
+}
+// MARK: - ArtistPresenterProtocol
+extension ArtistListViewController: ArtistPresenterProtocol{
     func failure(error: NSError) {
         self.showAlert(title: ConstantsError.error, subTitle: error.domain) {
         }
     }
 }
-
+// MARK: - ArtistCellProtocol
 extension ArtistListViewController: ArtistCellProtocol {
     func didSelected(artist: Artist) {
-       self.route?.showAlbumViewController(artist: artist)
+        self.route?.showAlbumViewController(artist: artist)
     }
 }

@@ -9,18 +9,19 @@
 import UIKit
 
 class AlbumViewController: BaseViewController {
-
+    // MARK: - IBOUtlets
     @IBOutlet weak var tableView: UITableView!
-
+    
+    // MARK: - Properties
+    var source:Source<AlbumTableViewCell>?
+    var artist:Artist?
     lazy var presenter: AlbumPresenter = {
         let presenter = AlbumPresenter()
         presenter.delegate = self
         return presenter
     }()
 
-    var source:Source<AlbumTableViewCell>?
-    var artist:Artist?
-
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setSource()
@@ -28,24 +29,24 @@ class AlbumViewController: BaseViewController {
         self.fetchAlbums()
     }
 
-    func setSource() {
+    fileprivate func setSource() {
         self.source = Source(identifier: AlbumTableViewCell.className)
     }
 
-    func setupTableView() {
+    fileprivate func setupTableView() {
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.registerNib(AlbumTableViewCell.self)
         self.tableView.separatorStyle = .none
     }
 
-    func fetchAlbums() {
+    fileprivate func fetchAlbums() {
         guard let id = artist?.id else {
             return
         }
         presenter.fetchAlbums(id: id)
     }
 
-    func update() {
+    fileprivate func update() {
         self.tableView.dataSource = self.source
         self.tableView.delegate = self.source
         self.tableView.reloadData()
