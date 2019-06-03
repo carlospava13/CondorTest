@@ -13,12 +13,13 @@ class ArtistRepositoryMock: ArtistRepositoryProtocol {
         if let path = Bundle.main.path(forResource: "mock", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-                if let jsonResult = jsonResult as? Dictionary<String, AnyObject>, let person = jsonResult["person"] as? [Any] {
+                let value = try JSONDecoder().decode(ResponseArtist.self, from: data)
+                succes(value.artists.items)
 
-                }
-            } catch {
-                // handle error
+            } catch (let error as NSError){
+                let statusCode = 500
+                let generateError = error.eventHandlerError(statusCode: statusCode)
+                failure(generateError)
             }
         }
     }

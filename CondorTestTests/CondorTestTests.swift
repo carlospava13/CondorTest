@@ -11,8 +11,10 @@ import XCTest
 
 class CondorTestTests: XCTestCase {
 
+    var manager:ArtistManager?
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.manager = ArtistManager()
     }
 
     override func tearDown() {
@@ -29,6 +31,15 @@ class CondorTestTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+
+    func testGetArtist() {
+        let manager = ArtistManager()
+        manager.fetchArtist(name: "sf", succes: { (result) in
+            XCTAssert(result.count > 0, "containt artist")
+        }, failure: { (error) in
+            XCTestError(_nsError: error)
+        })
     }
 
 }
