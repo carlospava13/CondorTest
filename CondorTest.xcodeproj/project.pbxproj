@@ -177,6 +177,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1A0D0B0B22A4BCCF008ADC12 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FF25722A4071D0031A9C6 /* Main.storyboard */,
+				1A4FF25C22A4071E0031A9C6 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		1A0D0B0C22A4BCFD008ADC12 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FF25322A4071D0031A9C6 /* AppDelegate.swift */,
+				1A4FF25F22A4071E0031A9C6 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1A0D0B0D22A4BD14008ADC12 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FF25A22A4071E0031A9C6 /* Assets.xcassets */,
+				1A0D8ADD22A48928004517B9 /* mock.json */,
+				1A0D8AE722A48D19004517B9 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		1A0D8AB622A44F56004517B9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +333,9 @@
 		1A4FF25222A4071D0031A9C6 /* CondorTest */ = {
 			isa = PBXGroup;
 			children = (
+				1A0D0B0D22A4BD14008ADC12 /* Resources */,
+				1A0D0B0C22A4BCFD008ADC12 /* Application */,
+				1A0D0B0B22A4BCCF008ADC12 /* StoryBoards */,
 				1A0D8AF022A49F77004517B9 /* Routes */,
 				1A0D8AD122A46FA7004517B9 /* ViewControllers */,
 				1A0D8AC722A45551004517B9 /* Presenter */,
@@ -312,13 +343,6 @@
 				1A7ED66C22A4494D003940F4 /* Cells */,
 				1A7ED66B22A4493C003940F4 /* Source */,
 				1AE841E922A409C0002097C3 /* Core */,
-				1A4FF25322A4071D0031A9C6 /* AppDelegate.swift */,
-				1A4FF25722A4071D0031A9C6 /* Main.storyboard */,
-				1A4FF25A22A4071E0031A9C6 /* Assets.xcassets */,
-				1A4FF25C22A4071E0031A9C6 /* LaunchScreen.storyboard */,
-				1A4FF25F22A4071E0031A9C6 /* Info.plist */,
-				1A0D8ADD22A48928004517B9 /* mock.json */,
-				1A0D8AE722A48D19004517B9 /* Localizable.strings */,
 			);
 			path = CondorTest;
 			sourceTree = "<group>";
