@@ -11,6 +11,8 @@ import Alamofire
 import AlamofireMapper
 class ArtistRepository: BaseRepository, ArtistRepositoryProtocol {
 
+    var headerTitles = ["Artists","Albums"]
+    
     func fetchArtist(name: String, succes:@escaping  SuccesCompletionBlock , failure:@escaping FailureCompletionBlock) {
         let params = ["q":name, "type":"artist"]
         let token = endPoint.token
@@ -23,8 +25,8 @@ class ArtistRepository: BaseRepository, ArtistRepositoryProtocol {
                     succes(data.artists.items)
                 case let .failure(error as NSError):
                     let statusCode = response.response?.statusCode
-                    error.eventHandlerError(statusCode: statusCode!)
-                    failure(error)
+                    let generateError = error.eventHandlerError(statusCode: statusCode!)
+                    failure(generateError)
                 }
         }
     }

@@ -10,7 +10,7 @@ import Foundation
 
 protocol ArtistPresenterProtocol {
     func getArtist(artists:[Artist])
-    func failure(error:Error)
+    func failure(error:NSError)
 }
 
 

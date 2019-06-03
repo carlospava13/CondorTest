@@ -25,6 +25,7 @@ class ViewController: BaseViewController {
         presenter.delegate = self
         return presenter
     }()
+
     var source:Source<ArtistTableViewCell>?
 
     override func viewDidLoad() {
@@ -52,6 +53,7 @@ class ViewController: BaseViewController {
 
 extension ViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
+        
         guard let text = searchController.searchBar.text else {
             return
         }
@@ -59,7 +61,6 @@ extension ViewController: UISearchResultsUpdating{
         if !text.isEmpty {
             presenter.fetchArtist(name: text)
         }
-
     }
 }
 
@@ -69,7 +70,7 @@ extension ViewController: ArtistPresenterProtocol{
         self.update()
     }
 
-    func failure(error: Error) {
-     self.showAlert(title: "Errpr", subTitle: error.localizedDescription)
+    func failure(error: NSError) {
+     self.showAlert(title: ConstantsError.error, subTitle: error.domain)
     }
 }
