@@ -11,14 +11,15 @@ import XCTest
 
 class CondorTestTests: XCTestCase {
 
-
+    var manager:ArtistManager?
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        manager = ArtistManager()
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-       // manager = nil
+       manager = nil
     }
 
     func testExample() {
@@ -34,9 +35,9 @@ class CondorTestTests: XCTestCase {
     }
 
     func testGetArtist() {
-        let manager = ArtistManager()
+        //let manager = ArtistManager()
         let fecthExpectation = expectation(description: "TO retrieve a list of artists")
-        manager.fetchArtist(name: "sf", succes: { (result) in
+        manager?.fetchArtist(name: "sf", succes: { (result) in
             if !result.isEmpty {
                 fecthExpectation.fulfill()
             }
