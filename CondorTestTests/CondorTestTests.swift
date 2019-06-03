@@ -34,16 +34,10 @@ class CondorTestTests: XCTestCase {
     }
 
     func testGetArtist() {
-        let expectation = self.expectation(description: "Scaling")
-        let manager = ArtistManager()
-        var array: [Artist]?
-        manager.fetchArtist(name: "sf", succes: { (result) in
-            array = result
-            expectation.fulfill()
+        manager?.fetchArtist(name: "sf", succes: { (result) in
+            XCTAssert(result.count > 0, "Contiene")
         }, failure: { (error) in
-            expectation.fulfill()
+            XCTestError(_nsError: error)
         })
-        waitForExpectations(timeout: 0.3, handler: nil)
-        XCTAssert(array?.count ?? 0 > 0, "Contiene")
     }
 }
