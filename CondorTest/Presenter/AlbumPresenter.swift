@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol AlbumPresenterProtocol {
+protocol AlbumPresenterProtocol: class {
     func getAlbums(albums:[Album])
     func failure(error:NSError)
 }
@@ -16,7 +16,7 @@ protocol AlbumPresenterProtocol {
 
 class AlbumPresenter: NSObject {
     lazy var manager:AlbumManager = AlbumManager()
-    var delegate:AlbumPresenterProtocol?
+    weak var delegate:AlbumPresenterProtocol?
 
     func fetchAlbums(id:String) {
         manager.fetchAlbum(id: id, succes: { (albums) in

@@ -20,5 +20,4 @@ class EndPoint {
             self.albumEndPoint = String(format: albumEndPoint, newValue)
         }
     }
-
 }

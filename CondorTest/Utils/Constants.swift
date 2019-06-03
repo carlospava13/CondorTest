@@ -11,4 +11,15 @@ import Foundation
 struct Constants {
     static let follower = NSLocalizedString("follower", comment: "")
     static let popularity = NSLocalizedString("popularity", comment: "")
+
+
+    struct Parameter {
+        static let artist = "artist"
+        static let type = "type"
+        static let query = "q"
+    }
+
+    struct Header {
+        static let authorization = "Authorization"
+    }
 }

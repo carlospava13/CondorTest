@@ -15,7 +15,7 @@ class AlbumRepository: BaseRepository ,AlbumRepositoryProtocol{
         let token = endPoint.token
         endPoint.album = id
         let url = endPoint.urlBase + endPoint.albumEndPoint
-        let headers = ["Authorization":token]
+        let headers = [Constants.Header.authorization:token]
         
         Alamofire.request(url, method: .get
             , parameters: nil, encoding: URLEncoding.default, headers: headers ).responseObject {[weak self]  (response: DataResponse<ResponseAlbum>) in

@@ -13,7 +13,7 @@ class ArtistRepository: BaseRepository, ArtistRepositoryProtocol {
 
 
     func fetchArtist(name: String, succes:@escaping  SuccesCompletionBlock , failure:@escaping FailureCompletionBlock) {
-        let params = ["q":name, "type":"artist"]
+        let params = [Constants.Parameter.query:name, Constants.Parameter.type:Constants.Parameter.artist]
         let token = endPoint.token
         let url = endPoint.urlBase + endPoint.searchEndPoint
 

@@ -8,14 +8,14 @@
 
 import Foundation
 
-protocol ArtistPresenterProtocol {
+protocol ArtistPresenterProtocol:class {
     func failure(error:NSError)
 }
 
 
 class ArtistPresenter: NSObject {
     lazy var manager:ArtistManager = ArtistManager()
-    var delegate:ArtistPresenterProtocol?
+    weak var delegate:ArtistPresenterProtocol?
 
     func fetchArtist(name:String, with completion: @escaping (_ : [Artist]?) -> Void) {
         manager.fetchArtist(name: name, succes: { artist in
