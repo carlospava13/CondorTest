@@ -190,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				1A4FF25322A4071D0031A9C6 /* AppDelegate.swift */,
-				1A4FF25F22A4071E0031A9C6 /* Info.plist */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -333,6 +332,7 @@
 		1A4FF25222A4071D0031A9C6 /* CondorTest */ = {
 			isa = PBXGroup;
 			children = (
+				1A4FF25F22A4071E0031A9C6 /* Info.plist */,
 				1A0D0B0D22A4BD14008ADC12 /* Resources */,
 				1A0D0B0C22A4BCFD008ADC12 /* Application */,
 				1A0D0B0B22A4BCCF008ADC12 /* StoryBoards */,
