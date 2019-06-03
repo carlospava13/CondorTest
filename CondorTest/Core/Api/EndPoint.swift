@@ -10,7 +10,7 @@ import Foundation
 
 class EndPoint {
     let urlBase = "https://api.spotify.com/v1/"
-    let token = "Bearer BQDz6Qn5JZvpE-1UvnxQ6swDdf0tK8n0N9mbk7NL1MKi-09lHInFA724N39vydVpEivC7eRJhqLKSFxxosfQONa9k4wdmjBdzSVBHg9MKmHZpsdCw1876no-jIVAxJpzgFzEFPqdxb9wvFOb77Oa_IkfcTLWYZmTrevI978YyF4Z-gYj6PFsMLo0UPdwXGRgi8YLfWgh1_J3K49Zol5dc_S4B5Aemix35Q7XnYaa5wsYbibp3AuGE0f3HqNUlYuTk9L1V4SRrLKtwlWD7DbT"
+    let token = "Bearer BQAPAHI_hoHHtiXR0rUPeCP6pDGd3gXpUxrjGKDPB2YlsnT01NWNnqrN_fWe9M8QOHu5UrOD-SMOjPNbjRHhecIi9LIXBkJSFPt1ckPTZr-ZwydM579ztFlXcppYUVIpRj6RIYMiqKuKe9B-yxT_PaFpadafmSteL9YcAOQTu9fWwW9fMYKx8kiUGTCTIqTjPhw0UH35AnN7h63YGvd1ALTFFoiYmWDKUJMgcJsDDz_OA8Sa7tnPp-QZQuM8PztRFIAXCRbXK6sW3tmTiJZ8"
     let searchEndPoint = "search"
 
     var albumEndPoint: String = "artists/%@/albums"

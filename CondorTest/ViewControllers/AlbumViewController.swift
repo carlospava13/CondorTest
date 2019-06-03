@@ -15,6 +15,7 @@ class AlbumViewController: BaseViewController {
     // MARK: - Properties
     var source:Source<AlbumTableViewCell>?
     var artist:Artist?
+    var route:AlbumRoute?
     lazy var presenter: AlbumPresenter = {
         let presenter = AlbumPresenter()
         presenter.delegate = self
@@ -24,9 +25,14 @@ class AlbumViewController: BaseViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setRoute()
         self.setSource()
         self.setupTableView()
         self.fetchAlbums()
+    }
+
+    fileprivate func setRoute() {
+        self.route = AlbumRoute(parentViewController: self)
     }
 
     fileprivate func setSource() {
@@ -66,6 +72,8 @@ extension AlbumViewController: AlbumPresenterProtocol {
     }
 }
 
-extension AlbumViewController: BaseProtocol {
-
+extension AlbumViewController: AlbumCellProtocol {
+    func didSelected(album: Album) {
+        self.route?.showAlbumDetailViewController(album: album)
+    }
 }

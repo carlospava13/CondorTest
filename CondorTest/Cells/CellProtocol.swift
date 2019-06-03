@@ -15,3 +15,6 @@ protocol ArtistCellProtocol: BaseProtocol {
     func didSelected(artist:Artist)
 }
 
+protocol AlbumCellProtocol : BaseProtocol{
+    func didSelected(album:Album)
+}

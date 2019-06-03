@@ -18,7 +18,7 @@ class AlbumTableViewCell: BaseTableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         if let album = self.album, selected {
-            
+            self.albumDelegate?.didSelected(album: album)
         }
     }
 

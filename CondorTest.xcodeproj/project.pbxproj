@@ -50,6 +50,8 @@
 		1A4FF27422A4071E0031A9C6 /* CondorTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FF27322A4071E0031A9C6 /* CondorTestUITests.swift */; };
 		1A7ED66E22A44AB2003940F4 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7ED66D22A44AB2003940F4 /* Source.swift */; };
 		1A7ED67022A44AD5003940F4 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7ED66F22A44AD5003940F4 /* BaseTableViewCell.swift */; };
+		1AB2916A22A54C5900921F61 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2916922A54C5900921F61 /* AlbumDetailViewController.swift */; };
+		1AB2916C22A54DBB00921F61 /* AlbumRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2916B22A54DBB00921F61 /* AlbumRoute.swift */; };
 		1AE841EC22A409E7002097C3 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE841EB22A409E7002097C3 /* BaseRepository.swift */; };
 		3CF7A6999F4BC510A9A54640 /* Pods_CondorTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4DFFBD6969E6E9B74E820E /* Pods_CondorTestTests.framework */; };
 		756463C149152E006EFB68E3 /* Pods_CondorTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE0FF170E4ABBB9CBB2DF36 /* Pods_CondorTest.framework */; };
@@ -126,6 +128,8 @@
 		1A4FF27522A4071E0031A9C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A7ED66D22A44AB2003940F4 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		1A7ED66F22A44AD5003940F4 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		1AB2916922A54C5900921F61 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
+		1AB2916B22A54DBB00921F61 /* AlbumRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRoute.swift; sourceTree = "<group>"; };
 		1AE841EB22A409E7002097C3 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		1B57A0956E5D0EA0F45EDFBE /* Pods-CondorTestTests.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondorTestTests.mock.xcconfig"; path = "Pods/Target Support Files/Pods-CondorTestTests/Pods-CondorTestTests.mock.xcconfig"; sourceTree = "<group>"; };
 		2323BE6206B4EC006B82FA2D /* Pods-CondorTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondorTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CondorTestTests/Pods-CondorTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -257,6 +261,7 @@
 				1A4FF25522A4071D0031A9C6 /* ArtistListViewController.swift */,
 				1A0D8AD222A46FC4004517B9 /* BaseViewController.swift */,
 				1A0D8AEE22A49F07004517B9 /* AlbumViewController.swift */,
+				1AB2916922A54C5900921F61 /* AlbumDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				1A0D8AF122A49F87004517B9 /* ArtistRoute.swift */,
+				1AB2916B22A54DBB00921F61 /* AlbumRoute.swift */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -692,7 +698,9 @@
 				1A0D8ABE22A4521F004517B9 /* EndPoint.swift in Sources */,
 				1A0D8ACE22A45AEF004517B9 /* Artist.swift in Sources */,
 				1A0D8AFE22A4A80F004517B9 /* ItemAlbum.swift in Sources */,
+				1AB2916C22A54DBB00921F61 /* AlbumRoute.swift in Sources */,
 				1A0D8AFC22A4A7F1004517B9 /* ResponseAlbum.swift in Sources */,
+				1AB2916A22A54C5900921F61 /* AlbumDetailViewController.swift in Sources */,
 				1A0D8AF222A49F87004517B9 /* ArtistRoute.swift in Sources */,
 				1A4FF25422A4071D0031A9C6 /* AppDelegate.swift in Sources */,
 			);

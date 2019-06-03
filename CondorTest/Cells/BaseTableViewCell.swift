@@ -11,6 +11,7 @@ import UIKit
 class BaseTableViewCell: UITableViewCell, ReusableCell {
 
     var artistDelegate: ArtistCellProtocol?
+    var albumDelegate: AlbumCellProtocol?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,5 +28,8 @@ class BaseTableViewCell: UITableViewCell, ReusableCell {
             self.artistDelegate = delegate
         }
 
+        if let delegate = delegate as? AlbumCellProtocol{
+            self.albumDelegate = delegate
+        }
     }
 }
